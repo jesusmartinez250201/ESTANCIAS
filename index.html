@@ -21,6 +21,19 @@
     <link rel="shortcut icon" href="http://grupo-ecicom.com/wp-content/uploads/2020/12/cropped-iconoecicom-192x192.png" type="image/x-icon">          <!--API LEAFLET PARA MAPA-->    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
   </head>
   <body>
+    <style>
+      .jarallax > .jarallax-img {
+    position: absolute;
+    object-fit: cover;
+    /* support for plugin https://github.com/bfred-it/object-fit-images */
+    font-family: 'object-fit: cover;';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+    </style>
     <!--BARRA DE NAVEGACION-->
     <nav id="BarraNavegacion" class="navbar navbar-expand-xl navbar-transparent fixed-top">
       <div class="container">
@@ -71,9 +84,9 @@
     <!--CONTENIDO-->
     <div class="container-fluid position-absolute bg-white" style="top: 100%;">         
 
-      <div class="row" style="height: 696px; background: url(''); -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;">
-        <div class="col-7 align-self-center" style="padding-left: 5vh;">
-          <img class="img-fluid" src="437481.png" alt="">
+      <div class="row justify-content-center" style="height: 696px; background: url(''); -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;">
+        <div class="col-7 align-self-center justify-content-end" style="padding-left: 5vh;">
+          <img class="img-fluid" src="computadora.png" alt="">
         </div>
         <div class="col-5 infoSeccion align-self-center text-right" style="padding-right: 5vh; visibility: hidden;">
           <h1 style="font-size: 60px;">Lorem ipsum</h1>
@@ -83,8 +96,8 @@
       </div>
 
       <div class="row">
-        <div class="jarallax w-100" data-jarallax data-speed="0.2">
-          <img class="jarallax-img p-0 m-auto" src="http://grupo-ecicom.com/wp-content/uploads/2020/12/it-services-05.jpg" alt="">
+        <div class="jarallax w-100" data-jarallax data-speed="0.5">
+          <img class="jarallax-img p-0 img-fluid" src="img/pexels-pixabay-257736.jpg" alt="" style="float: right;">
           <div class="p-0 m-auto" style="height: 696px; opacity: 0.5; background-color: black;"></div>
         </div>
         <div class="col-5 m-auto align-self-center infoSeccion" style="position: absolute; visibility: hidden; padding-left: 5vh;">
