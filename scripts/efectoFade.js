@@ -45,7 +45,7 @@ $(window).scroll(function() {
 
   function checkScroll(){
     let puntoY = $('#BarraNavegacion').height() * 2;
-    if($(window). > puntoY){
+    if($(window).scrollTop > puntoY){
       $('#BarraNavegacion').removeClass('navbar-transparent');
       $('#BarraNavegacion').addClass('bg-dark');
       $('.navbar').css({
