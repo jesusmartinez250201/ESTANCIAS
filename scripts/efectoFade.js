@@ -24,7 +24,7 @@ $(window).scroll(function() {
     $('.textInfo').each(function(){
     var imagePos = $(this).offset().top;
     var topOfWindow = $(window).scrollTop();
-      if (imagePos < topOfWindow+500) {
+      if (imagePos < topOfWindow+00) {
         $(this).css({'visibility' : ''});
         $(this).addClass("slideLeft");
       }
@@ -35,16 +35,17 @@ $(window).scroll(function() {
     $('.marcas').each(function(){
     var imagePos = $(this).offset().top;
     var topOfWindow = $(window).scrollTop();
-      if (imagePos < topOfWindow+700) {
+      if (imagePos > topOfWindow+700) {
         $(this).css({'visibility' : ''});
         $(this).addClass("fadeIn");
       }
     });
   });
+  
 
   function checkScroll(){
     let puntoY = $('#BarraNavegacion').height() * 2;
-    if($(window).scrollTop() > puntoY){
+    if($(window). > puntoY){
       $('#BarraNavegacion').removeClass('navbar-transparent');
       $('#BarraNavegacion').addClass('bg-dark');
       $('.navbar').css({
