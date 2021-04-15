@@ -2,7 +2,7 @@ $(window).scroll(function() {
     $('.infoSeccion').each(function(){
     var imagePos = $(this).offset().top;
     var topOfWindow = $(window).scrollTop();
-      if (imagePos < topOfWindow+400) {
+      if (imagePos < topOfWindow+500) {
         $(this).css({'visibility' : ''});
         $(this).addClass("fadeIn");
       }
@@ -13,7 +13,7 @@ $(window).scroll(function() {
     $('.imgInfo').each(function(){
     var imagePos = $(this).offset().top;
     var topOfWindow = $(window).scrollTop();
-      if (imagePos < topOfWindow+400) {
+      if (imagePos < topOfWindow+500) {
         $(this).css({'visibility' : ''});
         $(this).addClass("slideRight");
       }
@@ -24,7 +24,7 @@ $(window).scroll(function() {
     $('.textInfo').each(function(){
     var imagePos = $(this).offset().top;
     var topOfWindow = $(window).scrollTop();
-      if (imagePos < topOfWindow+400) {
+      if (imagePos < topOfWindow+500) {
         $(this).css({'visibility' : ''});
         $(this).addClass("slideLeft");
       }
