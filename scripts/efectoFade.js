@@ -1,70 +1,91 @@
-$(window).scroll(function() {
-  $('.infoSeccion').each(function () {
-    let visible = true;
-    let windowTop = $(document).scrollTop();
-    let windowBottom = windowTop + window.innerHeight;
-    let elementPositionTop = $(this).offset().top;
-    let elementPositionBottom = elementPositionTop + $(this).height();
-    if (elementPositionTop >= windowBottom || elementPositionBottom <= windowTop) {
-        visible = false;
-    }
-    if (visible == true) {
-      $(this).css({'visibility' : ''});
-      $(this).addClass("fadeIn");
-    }
-  });
-});
+$(document).ready(function(){
+  if( !/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+    $(window).scroll(function() {
+      $('.infoSeccion').each(function () {
+        let visible = true;
+        let windowTop = $(document).scrollTop();
+        let windowBottom = windowTop + window.innerHeight;
+        let elementPositionTop = $(this).offset().top;
+        let elementPositionBottom = elementPositionTop + $(this).height();
+        if (elementPositionTop >= windowBottom || elementPositionBottom <= windowTop) {
+            visible = false;
+        }
+        if (visible == true) {
+          $(this).css({'visibility' : ''});
+          $(this).addClass("fadeIn");
+        }
+      });
+    });
+    
+    $(window).scroll(function() {
+      $('.marcas').each(function () {
+        let visible = true;
+        let windowTop = $(document).scrollTop();
+        let windowBottom = windowTop + window.innerHeight;
+        let elementPositionTop = $(this).offset().top;
+        let elementPositionBottom = elementPositionTop + $(this).height();
+        if (elementPositionTop >= windowBottom || elementPositionBottom <= windowTop) {
+            visible = false;
+        }
+        if (visible == true) {
+          $(this).css({'visibility' : ''});
+          $(this).addClass("fadeIn");
+        }
+      });
+    });
+    
+    $(window).scroll(function() {
+      $('.textInfo').each(function () {
+        let visible = true;
+        let windowTop = $(document).scrollTop();
+        let windowBottom = windowTop + window.innerHeight;
+        let elementPositionTop = $(this).offset().top;
+        let elementPositionBottom = elementPositionTop + $(this).height();
+        if (elementPositionTop >= windowBottom || elementPositionBottom <= windowTop) {
+            visible = false;
+        }
+        if (visible == true) {
+          $(this).css({'visibility' : ''});
+          $(this).addClass("slideLeft");
+        }
+      });
+    });
+    
+    $(window).scroll(function() {
+      $('.imgInfo').each(function () {
+        let visible = true;
+        let windowTop = $(document).scrollTop();
+        let windowBottom = windowTop + window.innerHeight;
+        let elementPositionTop = $(this).offset().top;
+        let elementPositionBottom = elementPositionTop + $(this).height();
+        if (elementPositionTop >= windowBottom || elementPositionBottom <= windowTop) {
+            visible = false;
+        }
+        if (visible == true) {
+          $(this).css({'visibility' : ''});
+          $(this).addClass("slideRight");
+        }
+      });
+    });
+    
 
-$(window).scroll(function() {
-  $('.marcas').each(function () {
-    let visible = true;
-    let windowTop = $(document).scrollTop();
-    let windowBottom = windowTop + window.innerHeight;
-    let elementPositionTop = $(this).offset().top;
-    let elementPositionBottom = elementPositionTop + $(this).height();
-    if (elementPositionTop >= windowBottom || elementPositionBottom <= windowTop) {
-        visible = false;
-    }
-    if (visible == true) {
+  }
+  else {
+    $('.infoSeccion').each(function() {
       $(this).css({'visibility' : ''});
-      $(this).addClass("fadeIn");
-    }
-  });
-});
+    });
+    $('.marcas').each(function() {
+      $(this).css({'visibility' : ''});
+    });
+    $('.textInfo').each(function() {
+      $(this).css({'visibility' : ''});
+    });
+    $('.imgInfo').each(function() {
+      $(this).css({'visibility' : ''});
+    });
+  }
 
-$(window).scroll(function() {
-  $('.textInfo').each(function () {
-    let visible = true;
-    let windowTop = $(document).scrollTop();
-    let windowBottom = windowTop + window.innerHeight;
-    let elementPositionTop = $(this).offset().top;
-    let elementPositionBottom = elementPositionTop + $(this).height();
-    if (elementPositionTop >= windowBottom || elementPositionBottom <= windowTop) {
-        visible = false;
-    }
-    if (visible == true) {
-      $(this).css({'visibility' : ''});
-      $(this).addClass("slideLeft");
-    }
-  });
-});
-
-$(window).scroll(function() {
-  $('.imgInfo').each(function () {
-    let visible = true;
-    let windowTop = $(document).scrollTop();
-    let windowBottom = windowTop + window.innerHeight;
-    let elementPositionTop = $(this).offset().top;
-    let elementPositionBottom = elementPositionTop + $(this).height();
-    if (elementPositionTop >= windowBottom || elementPositionBottom <= windowTop) {
-        visible = false;
-    }
-    if (visible == true) {
-      $(this).css({'visibility' : ''});
-      $(this).addClass("slideRight");
-    }
-  });
-});
+})
 
 function checkScroll(){
   let puntoY = $('#BarraNavegacion').height() * 2;
@@ -87,3 +108,6 @@ if($('.navbar').length > 0){
   checkScroll();
   });
 }
+
+
+
