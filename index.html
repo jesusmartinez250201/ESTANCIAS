@@ -17,23 +17,14 @@
     <!--LIBRERIA JARALLAX. ENLACE: https://github.com/nk-o/jarallax-->
     <script src="jarallax-master/dist/jarallax.min.js"></script>
     <link rel="stylesheet" href="jarallax-master/dist/jarallax.css">
-    <title>Inicio | PAG</title>
-    <link rel="shortcut icon" href="http://grupo-ecicom.com/wp-content/uploads/2020/12/cropped-iconoecicom-192x192.png" type="image/x-icon">          <!--API LEAFLET PARA MAPA-->    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+    <title></title>
+    <link rel="shortcut icon" href="img/ecicom_icono.png" type="image/x-icon">          
+    <!--API LEAFLET PARA MAPA-->    
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>    
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
   </head>
   <body>
-    <style>
-      .jarallax > .jarallax-img {
-    position: absolute;
-    object-fit: cover;
-    /* support for plugin https://github.com/bfred-it/object-fit-images */
-    font-family: 'object-fit: cover;';
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-}
-    </style>
+
     <!--BARRA DE NAVEGACION-->
     <nav id="BarraNavegacion" class="navbar navbar-expand-xl navbar-transparent fixed-top">
       <div class="container">
@@ -71,56 +62,118 @@
       </div>
     </nav>
     <!--CABECERA-->
-    <div class="page-header header-filter" data-parallax="true" style="background-image: url('http://grupo-ecicom.com/wp-content/uploads/2020/12/it-services-05.jpg');">
+    <div class="page-header header-filter" data-parallax="true" style="background-image: url('img/pexels-brett-sayles-1624895.jpg');">
       <div class="container ">
         <div class="row justify-content-center">
           <div class="col-md-8 md-offset-2 text-center">
-            <h1 class="display-1">Lorem ipsum</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+            <img class="img-fluid" src="img/Logo-ecicom.png" alt="">
+            <br>
+            <br>
+            <h1>Especialistas en Consultoría, Diseño, Ejecución y Gestión de Proyectos de TI</h1>
           </div>
         </div>
       </div>
     </div>
     <!--CONTENIDO-->
-    <div class="container-fluid position-absolute bg-white" style="top: 100%;">         
-
-      <div class="row justify-content-center" style="height: 696px; background: url(''); -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;">
-        <div class="col-7 align-self-center justify-content-end" style="padding-left: 5vh;">
-          <img class="img-fluid" src="computadora.png" alt="">
+    <div class="container-fluid position-absolute bg-white" style="top: 100%;">     
+      
+      <div class="row" style="height: 300px;">
+        <div class="col-12 infoSeccion container align-self-center text-center" style="visibility: hidden;">
+          <h2>Nuestra experiencia laboral más nuestros conocimientos actualizados y certificados nos hacen ser una empresa que puede ofrecer servicios especializados, exactos a sus necesidades y requerimientos de sus proyectos. Ofrecemos servicios tales como:</h2>
         </div>
-        <div class="col-5 infoSeccion align-self-center text-right" style="padding-right: 5vh; visibility: hidden;">
-          <h1 style="font-size: 60px;">Lorem ipsum</h1>
-          <p style="font-size: 20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-          <button class="btn btn-lg btn-info">Lorem ipsum</button>
+      </div>
+
+      <div class="row justify-content-center px-5" style="height: 700px;">
+        <div class="col-7 align-self-center">
+          <img class="align-self-center" src="img/torre.png" alt="" style="padding-right: 20vh;">
+        </div>
+        <div class="col-5 infoSeccion align-self-center text-right" style="visibility: hidden;">
+          <h2>Consultoría de proyectos de infraestructura de Telecomunicaciones</h2>
+          <p style="font-size: 20px;">En ecicom brindamos un diagnostico para ofrecer soluciones optimas para los sistemas de telecomunicaciones de nuestros clientes.</p>
+          <button class="btn btn-lg btn-info">Conoce mas</button>
         </div>
       </div>
 
       <div class="row">
         <div class="jarallax w-100" data-jarallax data-speed="0.5">
-          <img class="jarallax-img p-0 img-fluid" src="img/pexels-pixabay-257736.jpg" alt="" style="float: right;">
-          <div class="p-0 m-auto" style="height: 696px; opacity: 0.5; background-color: black;"></div>
+          <img class="jarallax-img p-0 img-fluid" src="img/pexels-brett-sayles-4330787.jpg" alt="">
+          <div class="p-0 m-auto" style="height: 700px; background-color: rgba(0, 64, 255, 0.5);"></div>
         </div>
-        <div class="col-5 m-auto align-self-center infoSeccion" style="position: absolute; visibility: hidden; padding-left: 5vh;">
-          <h1 style="color: white; font-size: 60px;">Lorem ipsum</h1>
-          <p style="color: white; font-size: 20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-          <button class="btn btn-lg btn-info">Lorem ipsum</button>
+        <div class="col-5 align-self-center infoSeccion px-5" style="position: absolute; visibility: hidden; padding-left: 5vh;">
+          <h1 style="color: rgb(255, 255, 255); font-size: 50px;">Soporte de Infraestructura de Telecomunicaciones</h1>
+          <p style="color: rgb(255, 255, 255); font-size: 20px;">Ademas de un diagnostico, en Ecicom brindamos soporte adaptado a las requerimientos y necesidades que nuestros clientes soliciten</p>
+          <button class="btn btn-lg btn-info">Conoce mas</button>
         </div> 
       </div>
 
-      <div class="row" style="padding: 30px;">
-        <div class="col-sm-4">
-          <h3>Columna 1</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+      <div class="row justify-content-center px-5" style="height: 700px;">
+        <div class="col-7 align-self-center">
+          <img class="align-self-center" src="img/video-village.png" alt="" style="padding-right: 20vh;">
         </div>
-        <div class="col-sm-4">
-          <h3>Columna 2</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+        <div class="col-5 infoSeccion align-self-center text-right" style="visibility: hidden;">
+          <h2>Instalación, configuración de equipo y accesorios para sistemas de voz-datos-video</h2>
+          <p style="font-size: 20px;">El cableado para transmisión de voz y de datos permite que todas las personas se comuniquen por teléfono, fax, computadora y video. En Ecicom contamos con el equipo y experiencia para configurar el equipo de acuerdo con los requerimientos de nuestros clientes.</p>
+          <button class="btn btn-lg btn-info">Conoce mas</button>
         </div>
-        <div class="col-sm-4">
-          <h3>Columna 3</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+      </div>
+
+      <div class="row">
+        <div class="jarallax w-100" data-jarallax data-speed="0.5">
+          <img class="jarallax-img p-0 img-fluid" src="img/pexels-pixabay-267507.jpg" alt="">
+          <div class="p-0 m-auto" style="height: 700px; background-color: rgba(0, 0, 0, 0.5);"></div>
         </div>
-      </div> 
+        <div class="col-5 align-self-center infoSeccion px-5" style="position: absolute; visibility: hidden; padding-left: 5vh;">
+          <h1 style="color: rgb(255, 255, 255); font-size: 50px;">Productos/materiales</h1>
+          <p style="color: rgb(255, 255, 255); font-size: 20px;">Suministramos todo el material y equipo necesario para habilitar espacios de red y telefonia adecuados para lo que el cliente requiera.</p>
+          <button class="btn btn-lg btn-info">Conoce mas</button>
+        </div> 
+      </div>
+
+      <div class="row justify-content-center px-5" style="height: 700px;">
+        <div class="col-7 align-self-center">
+          <img class="align-self-center" src="img/informatica.png" alt="" style="padding-right: 20vh;">
+        </div>
+        <div class="col-5 infoSeccion align-self-center text-right" style="visibility: hidden;">
+          <h2>Soporte e instalación de aplicaciones y sistemas Informáticos</h2>
+          <p style="font-size: 20px;">Contamos con la experiencia y conocimiento necesarios para dar soporte a paginas y aplicaciones web, software, dominios y hosting, etc.</p>
+          <button class="btn btn-lg btn-info">Conoce mas</button>
+        </div>
+      </div>
+      
+      <div class="row" style="height: 300px;">
+        <div class="col-12 container align-self-center text-center">
+          <h2>Contamos con el apoyo y confianza de diversas marcas de productos y equipos de telecomunicaciones líderes en el mercado nacional e internacional como son:</h2>
+        </div>
+      </div>
+
+      <div class="row p-5">
+        <div class="infoSeccion row">
+          <div class="col-2 p-3">
+            <img class="img-fluid" src="img/cisco_logo.png" alt="">
+          </div>
+          <div class="col-2 align-self-center p-3">
+            <img class="img-fluid" src="img/panasonic_logo.png" alt="">
+          </div>
+          <div class="col-2 align-self-center p-3">
+            <img class="img-fluid" src="img/bose_logo.png" alt="">
+          </div>
+          <div class="col-2 align-self-center p-3">
+            <img class="img-fluid" src="img/alcatel_logo.png" alt="">
+          </div>
+          <div class="col-2 align-self-center p-3">
+            <img class="img-fluid" src="img/tyco_logo.png" alt="">
+          </div>
+          <div class="col-2 align-self-center p-3">
+            <img class="img-fluid" src="img/3com_logo.png" alt="">
+          </div>
+        </div>
+      </div>
+
+      <div class="row p-0" style="height: 150px">
+        <div class="col-12 container align-self-center text-center">
+          <h2>y muchas mas.</h2>
+        </div>
+      </div>
 
       <!--PIE DE PAGINA-->
       <div class="row" style="background-color:#1A1A1A; padding: 30px;">
